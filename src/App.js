@@ -119,7 +119,7 @@ class App extends React.Component{
         let data = [];
         funds.forEach((fund) => {
             let series = {
-                name: funds.symbols,
+                name: fund.symbols,
                 data: this.getDataSet(fund.monthlyReturns, time),
                 visible: true,
                 showInLegend: true
